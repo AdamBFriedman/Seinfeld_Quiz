@@ -53,4 +53,20 @@ while True:
         print("Provide a valid string value...")
         continue
 
-print("Out of three questions, you answered " + str(score) + " questions correctly.")
+while True:
+    try:
+        question_4 = input("What type of bread did Jerry still from the old lady?")
+        if question_4 == "skip":
+            print("Okay, we'll skip that one.")
+            break;
+        elif question_4 == "Marble Rye" or question_4 == "marble rye" or question_4 == "MARBLE RYE":
+            score+=1
+            print("That is correct!.  Your score is " + str(score))
+            break;
+        else:
+            print("Nope, try again...")
+    except ValueError:
+        print("Provide a valid string value...")
+        continue
+
+print("Out of four questions, you answered " + str(score) + " questions correctly.")

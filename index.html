@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <h1>Hello</h1>
+
+    <script src="" async defer></script>
+    <py-script> 
+        score = 0
+
+while True:
+    try:
+        question_1 = input("What is Jerry's apartment number?")
+        if question_1 == "5a" or question_1 == "5A":
+            score+=1
+            print("That is correct!.  Your score is " + str(score))
+            break;
+        else:
+            print("Nope, try again...")
+    except ValueError:
+        print("Provide a valid string value...")
+        continue
+
+while True:
+    try:
+        question_2 = input("What is George's bank card pin number?")
+        if question_2 == "Bosco" or question_2 == "bosco" or question_2 == "BOSCO":
+            score+=1
+            print("That is correct!.  Your score is " + str(score))
+            break;
+        else:
+            print("Nope, try again...")
+    except ValueError:
+        print("Provide a valid string value...")
+        continue
+    </py-script>
+  </body>
+</html>
